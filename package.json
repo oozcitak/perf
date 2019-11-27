@@ -48,6 +48,6 @@
   },
   "scripts": {
     "compile": "rm -rf lib && tsc --version && tsc",
-    "publish-public": "npm compile && npm publish --access public"
+    "publish-public": "npm run compile && npm publish --access public"
   }
 }
