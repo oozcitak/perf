@@ -1,0 +1,54 @@
+{
+  "name": "@oozcitak/perf",
+  "version": "0.0.1",
+  "keywords": [
+    "performance",
+    "js"
+  ],
+  "homepage": "http://github.com/oozcitak/perf",
+  "description": "Performance testing for node.js",
+  "author": "Ozgur Ozcitak <oozcitak@gmail.com>",
+  "contributors": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oozcitak/perf.git"
+  },
+  "bugs": {
+    "url": "http://github.com/oozcitak/perf/issues"
+  },
+  "main": "./lib/index",
+  "bin": {
+    "perf": "./lib/index.js"
+  },
+  "engines": {
+    "node": ">=10.0"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "git-state": "*",
+    "chalk": "*"
+  },
+  "devDependencies": {
+    "typescript": "*",
+    "glob": "*",
+    "@types/node": "*"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "/test/.*\\.test\\.tsx?$",
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}"
+    ]
+  },
+  "scripts": {
+    "compile": "rm -rf lib && tsc --version && tsc",
+    "test": "npm run compile && node ./lib",
+    "publish-public": "npm run test && npm publish --access public"
+  }
+}

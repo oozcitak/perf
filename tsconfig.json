@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "declaration": true,
+        "lib": [
+            "es6"
+        ],
+        "locale": "en",
+        "strict": true,
+        "newLine": "lf",
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "outDir": "lib",
+        "types": [
+            "node"
+        ],
+        "typeRoots": [
+            "src/types/globals.d.ts",
+            "src/types/git-state.d.ts"
+        ],
+        "baseUrl": "./",
+        "paths": {
+            "*": ["node_modules/*", "src/types/*"]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
