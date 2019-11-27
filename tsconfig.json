@@ -16,16 +16,16 @@
             "node"
         ],
         "typeRoots": [
-            "src/types/globals.d.ts",
-            "src/types/git-state.d.ts"
+            "typings/perf/index.d.ts",
+            "typings/git-state/index.d.ts"
         ],
         "baseUrl": "./",
         "paths": {
-            "*": ["node_modules/*", "src/types/*"]
+            "*": ["node_modules/*", "typings/*"]
         }
     },
     "include": [
-        "src/**/*"
+        "src/**/*", "typings/git-state/index.d.ts", "typings/perf/index.d.ts"
     ],
     "exclude": [
         "node_modules"
