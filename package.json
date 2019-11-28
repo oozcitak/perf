@@ -25,9 +25,10 @@
     "node": ">=10.0"
   },
   "files": [
-    "lib/**/*"
+    "lib/**/*",
+    "types/**/*"
   ],
-  "types": "lib/index.d.ts",
+  "types": "./types/index.d.ts",
   "dependencies": {
     "git-state": "*",
     "chalk": "*"

@@ -1,3 +1,5 @@
+/// <reference types="node" />
+
 declare namespace NodeJS {
   // Augments `global` object when node.d.ts is loaded
   interface Global extends PerfGlobals { }
