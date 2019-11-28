@@ -35,18 +35,7 @@
   },
   "devDependencies": {
     "typescript": "*",
-    "glob": "*",
     "@types/node": "*"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testRegex": "/test/.*\\.test\\.tsx?$",
-    "testEnvironment": "node",
-    "collectCoverageFrom": [
-      "src/**/*.{ts,tsx}"
-    ]
   },
   "scripts": {
     "compile": "rm -rf lib && tsc --version && tsc",

@@ -19,7 +19,7 @@ const runPerfTests = function(): void {
     throw new Error(`Unable to locate project directory.`)
   }
 
-  _benchmarkResults = {}
+  global._benchmarkResults = {}
   let hasTests = false
   for (const filename of getTestFiles(join(projectDir, perfDirName))) {
     hasTests = true

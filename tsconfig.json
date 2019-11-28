@@ -3,29 +3,17 @@
         "target": "es6",
         "module": "commonjs",
         "declaration": true,
-        "lib": [
-            "es6"
-        ],
+        "lib": [ "es6" ],
         "locale": "en",
         "strict": true,
         "newLine": "lf",
         "sourceMap": true,
         "esModuleInterop": true,
         "outDir": "lib",
-        "types": [
-            "node"
-        ],
-        "typeRoots": [
-            "typings/perf/index.d.ts",
-            "typings/git-state/index.d.ts"
-        ],
-        "baseUrl": "./",
-        "paths": {
-            "*": ["node_modules/*", "typings/*"]
-        }
+        "types": [ "node" ]
     },
     "include": [
-        "src/**/*", "typings/git-state/index.d.ts", "typings/perf/index.d.ts"
+        "src/**/*", "typings/**/*"
     ],
     "exclude": [
         "node_modules"
